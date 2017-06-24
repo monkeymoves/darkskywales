@@ -56,7 +56,7 @@ var units = 'imperial'
         break
     }
     // Array of backgroudn images.
-    var imgs = ['url("http://i.imgur.com/eI5KLUW.jpg")', 'url("http://i.imgur.com/rG0P1ro.jpg")', 'url("http://i.imgur.com/voCuONs.jpg")', 'url("http://i.imgur.com/5tFHSKa.jpg")']
+    var imgs = ['url("https://crossorigin.me/http://i.imgur.com/eI5KLUW.jpg")', 'url("https://crossorigin.me/http://i.imgur.com/rG0P1ro.jpg")', 'url("https://crossorigin.me/http://i.imgur.com/voCuONs.jpg")', 'url("https://crossorigin.me/http://i.imgur.com/5tFHSKa.jpg")']
     // Select custom backgroudn image according to temperature range.
     if (temp >= temps[0]) {
       $('.intro').css('background-image', imgs[0])
@@ -75,7 +75,7 @@ var units = 'imperial'
 
 // When the documet finished loading call the Location API
 $(document).ready(function () {
-  $.getJSON('http://ip-api.com/json', getLocation, 'jsonp')
+  $.getJSON('https://crossorigin.me/http://ip-api.com/json', getLocation, 'jsonp')
   // Handler for opetion between Metric and Imperial style temperature
   $('input[type=radio][name=farenheit-celcius]').change(function () {
     if ($('#f').is(':checked')) {
