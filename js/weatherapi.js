@@ -75,7 +75,7 @@ var units = 'imperial'
 
 // When the documet finished loading call the Location API
 $(document).ready(function () {
-  $.getJSON('https://crossorigin.me/http://ip-api.com/json', getLocation, 'jsonp')
+  $.getJSON('https://cors-anywhere.herokuapp.com/http://ip-api.com/json', getLocation, 'jsonp')
   // Handler for opetion between Metric and Imperial style temperature
   $('input[type=radio][name=farenheit-celcius]').change(function () {
     if ($('#f').is(':checked')) {
