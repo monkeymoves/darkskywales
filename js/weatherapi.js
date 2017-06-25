@@ -56,7 +56,7 @@ var units = 'imperial'
         break
     }
     // Array of backgroudn images.
-    var imgs = ['url("https://cors-anywhere.herokuapp.com//http://i.imgur.com/eI5KLUW.jpg")', 'url("hhttps://cors-anywhere.herokuapp.com/http://i.imgur.com/rG0P1ro.jpg")', 'url("https://cors-anywhere.herokuapp.com/http://i.imgur.com/voCuONs.jpg")', 'url("https://cors-anywhere.herokuapp.com/http://i.imgur.com/5tFHSKa.jpg")']
+    var imgs = ['url("https://cors-anywhere.herokuapp.com//http://i.imgur.com/eI5KLUW.jpg")', 'url("https://cors-anywhere.herokuapp.com/http://i.imgur.com/rG0P1ro.jpg")', 'url("https://cors-anywhere.herokuapp.com/http://i.imgur.com/voCuONs.jpg")', 'url("https://cors-anywhere.herokuapp.com/http://i.imgur.com/5tFHSKa.jpg")']
     // Select custom backgroudn image according to temperature range.
     if (temp >= temps[0]) {
       $('.intro').css('background-image', imgs[0])
