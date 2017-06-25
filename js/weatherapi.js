@@ -28,7 +28,7 @@ var getLocation = function (data) {
   var city =data.city;
   var state =data.regionName;
   // Custom url for the weather API, it is only missing imperial or metric format.
-  url = 'http://api.openweathermap.org/data/2.5/weather?'+'&APPID=aded2644e0681a69ba5a43f3b1508304' + '&lat=' + lat + '&lon=' + lon + '&units=';
+  url = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?'+'&APPID=aded2644e0681a69ba5a43f3b1508304' + '&lat=' + lat + '&lon=' + lon + '&units=';
     
 var units = 'imperial'
 // Function to get the Weather info and display it.
@@ -40,7 +40,7 @@ var units = 'imperial'
     var code = data.weather[0].icon
     var wspeed = data.wind.speed
     // Create custom HTML to display all the information gathered.
-    var html = '<img src="http://openweathermap.org/img/w/' + code + '.png" alt="Weather Icon">' + '<p> ' + Math.round(temp) + ' ' + tempUnit + ', ' + description + '<br> Wind Speed: ' + wspeed + windUnit + '</p><p>' + city + ', ' + state + '</p>'
+    var html = '<img src="https://cors-anywhere.herokuapp.com/http://openweathermap.org/img/w/' + code + '.png" alt="Weather Icon">' + '<p> ' + Math.round(temp) + ' ' + tempUnit + ', ' + description + '<br> Wind Speed: ' + wspeed + windUnit + '</p><p>' + city + ', ' + state + '</p>'
     // Displays the custom HTML
     $('#weather').html(html)
       
@@ -56,7 +56,7 @@ var units = 'imperial'
         break
     }
     // Array of backgroudn images.
-    var imgs = ['url("https://crossorigin.me/http://i.imgur.com/eI5KLUW.jpg")', 'url("https://crossorigin.me/http://i.imgur.com/rG0P1ro.jpg")', 'url("https://crossorigin.me/http://i.imgur.com/voCuONs.jpg")', 'url("https://crossorigin.me/http://i.imgur.com/5tFHSKa.jpg")']
+    var imgs = ['url("https://cors-anywhere.herokuapp.com//http://i.imgur.com/eI5KLUW.jpg")', 'url("hhttps://cors-anywhere.herokuapp.com/http://i.imgur.com/rG0P1ro.jpg")', 'url("https://cors-anywhere.herokuapp.com/http://i.imgur.com/voCuONs.jpg")', 'url("https://cors-anywhere.herokuapp.com/http://i.imgur.com/5tFHSKa.jpg")']
     // Select custom backgroudn image according to temperature range.
     if (temp >= temps[0]) {
       $('.intro').css('background-image', imgs[0])
