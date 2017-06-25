@@ -40,7 +40,7 @@ var units = 'imperial'
     var code = data.weather[0].icon
     var wspeed = data.wind.speed
     // Create custom HTML to display all the information gathered.
-    var html = '<img src=https://openweathermap.org/img/w/' + code + '.png" alt="Weather Icon">' + '<p> ' + Math.round(temp) + ' ' + tempUnit + ', ' + description + '<br> Wind Speed: ' + wspeed + windUnit + '</p><p>' + city + ', ' + state + '</p>'
+    var html = '<img src=https://openweathermap.org/img/w/' + code + '.png>' + '<p> ' + Math.round(temp) + ' ' + tempUnit + ', ' + description + '<br> Wind Speed: ' + wspeed + windUnit + '</p><p>' + city + ', ' + state + '</p>'
     // Displays the custom HTML
     $('#weather').html(html)
       
